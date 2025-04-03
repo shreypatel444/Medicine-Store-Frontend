@@ -1,0 +1,112 @@
+/* AddProduct Container */
+.add-admin-product-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form Inputs */
+form .admin-product-name,
+form .admin-product-disease,
+form .admin-product-image,
+form .admin-product-description,
+form .admin-product-price {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+form .admin-product-price {
+  -moz-appearance: textfield;
+}
+
+form .admin-product-name:focus,
+form .admin-product-disease:focus,
+form .admin-product-image:focus,
+form .admin-product-description:focus,
+form .admin-product-price:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+form .admin-product-description {
+  resize: vertical;
+  height: 120px;
+}
+
+/* Submit Button */
+button.admin-product-submit {
+  width: 100%;
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.admin-product-submit:hover {
+  background-color: #45a049;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  .add-admin-product-container {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  form .admin-product-name,
+  form .admin-product-disease,
+  form .admin-product-image,
+  form .admin-product-description,
+  form .admin-product-price {
+    font-size: 14px;
+  }
+
+  button.admin-product-submit {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .add-admin-product-container {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  form .admin-product-name,
+  form .admin-product-disease,
+  form .admin-product-image,
+  form .admin-product-description,
+  form .admin-product-price {
+    font-size: 14px;
+  }
+
+  button.admin-product-submit {
+    font-size: 14px;
+  }
+}

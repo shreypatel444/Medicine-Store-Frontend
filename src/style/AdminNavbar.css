@@ -1,0 +1,98 @@
+/* Navbar container */
+.navbar-admin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #1151e4;
+  opacity: 0.85;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.nav-links-admin {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links-admin li {
+  padding: 5px 10px;
+}
+
+.nav-links-admin a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nav-links-admin a:hover {
+  color: #f1c40f;
+}
+
+/* Active Link Styling */
+.nav-links-admin .active {
+  color: #f1c40f;
+  font-weight: bold;
+}
+
+/* Hamburger menu for mobile view */
+.hamburger-admin {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+  .nav-links-admin {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 20px;
+    z-index: 10;
+  }
+
+  .nav-links-admin.active {
+    display: flex;
+  }
+
+  .hamburger-admin {
+    display: flex;
+  }
+
+  .nav-links-admin li {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .nav-links-admin a {
+    font-size: 20px;
+  }
+
+  /* Active Link Styling for Mobile */
+  .nav-links-admin .active {
+    color: #f1c40f;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,71 @@
+.auth-register-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #4b6cb7, #182848);
+    padding: 20px;
+}
+
+.auth-register-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.auth-register-title {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+.auth-register-input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.auth-register-textarea {
+    height: 80px;
+    resize: none;
+}
+
+.auth-register-button {
+    width: 100%;
+    padding: 12px;
+    background: #182848;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.auth-register-button:hover {
+    background: #4b6cb7;
+}
+
+@media (max-width: 480px) {
+    .auth-register-container {
+        padding: 20px;
+    }
+    .auth-register-title {
+        font-size: 20px;
+    }
+    .auth-register-input {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .auth-register-button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}

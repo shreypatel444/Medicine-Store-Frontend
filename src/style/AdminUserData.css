@@ -1,0 +1,91 @@
+/* Container for the UserDetails page */
+.user-details-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+/* User details list */
+.user-details-list {
+  margin-top: 30px;
+}
+
+.user-details-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.user-details-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.user-details-info {
+  flex-grow: 1;
+}
+
+.user-details-info h4 {
+  margin: 0;
+  color: #333;
+}
+
+.user-details-info p {
+  margin: 5px 0;
+  color: #777;
+}
+
+/* Delete button styling */
+.user-details-delete-button {
+  padding: 8px 15px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.user-details-delete-button:hover {
+  background-color: #c0392b;
+}
+
+/* Responsive styling for mobile */
+@media (max-width: 768px) {
+  .user-details-container {
+    padding: 15px;
+  }
+
+  .user-details-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .user-details-info h4 {
+    font-size: 18px;
+  }
+
+  .user-details-info p {
+    font-size: 14px;
+  }
+
+  .user-details-delete-button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}

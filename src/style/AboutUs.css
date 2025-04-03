@@ -1,0 +1,90 @@
+.about-us-container {
+  padding: 80px 10%; /* Added padding for better spacing */
+  background-color: #fbf9f9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem;
+  box-shadow: 1px 1px 5px rgb(169, 169, 169);
+}
+
+.about-us-title {
+  text-align: center;
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 40px; /* Increased margin for better spacing */
+}
+
+.about-us-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px; /* Increased gap for better spacing */
+}
+
+.about-us-text {
+  flex: 1;
+  font-size: 1.2rem; /* Slightly larger text for better readability */
+  color: #555;
+  line-height: 1.8;
+  padding: 20px; /* Added padding to separate text from the edges */
+}
+
+.about-us-text p {
+  margin-bottom: 20px;
+}
+
+.about-us-image {
+  flex: 1;
+  text-align: center;
+}
+
+.about-us-image img {
+  width: 100%;
+  max-width: 500px; /* Adjusted max-width for better balance */
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1024px) {
+  .about-us-container {
+    padding: 60px 5%;
+  }
+
+  .about-us-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .about-us-text {
+    font-size: 1.1rem;
+    padding: 10px;
+  }
+
+  .about-us-image img {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-us-container {
+    padding: 50px 5%;
+  }
+
+  .about-us-title {
+    font-size: 2.5rem;
+  }
+
+  .about-us-text {
+    font-size: 1rem;
+  }
+
+  .about-us-image img {
+    max-width: 100%;
+  }
+}

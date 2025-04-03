@@ -1,0 +1,159 @@
+/* Profile Page Styling */
+.profile-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.profile-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.profile-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-field {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.profile-field label {
+  display: block;
+  font-weight: bold;
+  color: #555;
+}
+
+.profile-field p {
+  font-size: 16px;
+  color: #333;
+}
+
+.profile-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.edit-btn,
+.save-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.edit-btn {
+  background: #007bff;
+  color: white;
+}
+
+.edit-btn:hover {
+  background: #0056b3;
+}
+
+.save-btn {
+  background: #28a745;
+  color: white;
+}
+
+.save-btn:hover {
+  background: #218838;
+}
+.admin-btn{
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+  width: 100%; /* Full width on small screens */
+  max-width: 320px; /* Limit max width */
+  text-align: center;
+}
+
+.admin-btn:hover {
+  background-color: #156cc9;
+}
+
+
+.home-btn {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+  width: 100%; /* Full width on small screens */
+  max-width: 320px; /* Limit max width */
+  text-align: center;
+}
+
+.home-btn:hover {
+  background-color: #156cc9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-btn {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+  .admin-btn{
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-btn {
+    font-size: 12px;
+    padding: 6px 10px;
+    max-width: 100%; /* Make it full width on smaller screens */
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .profile-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .profile-title {
+    font-size: 20px;
+  }
+
+  .profile-field p,
+  .profile-input {
+    font-size: 14px;
+  }
+
+  .edit-btn,
+  .save-btn {
+    font-size: 14px;
+    padding: 8px;
+  }
+}

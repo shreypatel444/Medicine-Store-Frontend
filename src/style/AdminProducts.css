@@ -1,0 +1,132 @@
+/* Container for the Add Product page */
+.products-admin-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.products-admin-input,
+.products-admin-textarea,
+.products-admin-button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.products-admin-input[type="text"],
+.products-admin-input[type="number"],
+.products-admin-textarea {
+  width: 100%;
+}
+
+.products-admin-button {
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.products-admin-button:hover {
+  background-color: #f1c40f;
+}
+
+.products-admin-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Products list */
+.products-admin-list {
+  margin-top: 30px;
+}
+
+.products-admin-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.products-admin-list li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.products-admin-list img {
+  max-width: 80px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.products-admin-list div {
+  flex-grow: 1;
+}
+
+.products-admin-list h4 {
+  margin: 0;
+  color: #333;
+}
+
+.products-admin-list p {
+  margin: 5px 0;
+  color: #777;
+}
+
+.products-admin-list .products-admin-edit-button {
+  padding: 8px 15px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.products-admin-list .products-admin-edit-button:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive styling for mobile */
+@media (max-width: 768px) {
+  .products-admin-container {
+    padding: 15px;
+  }
+
+  form {
+    gap: 10px;
+  }
+
+  .products-admin-button {
+    padding: 12px;
+  }
+
+  .products-admin-list li {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .products-admin-list img {
+    max-width: 100px;
+    margin-bottom: 10px;
+  }
+}
