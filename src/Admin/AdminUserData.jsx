@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 import "../style/AdminUserData.css";
 
 const UserDetails = () => {
   const [users, setUsers] = useState([]);
+  const navigate = useNavigate();
 
-  // Fetch users from the server
   useEffect(() => {
     const fetchUsers = async () => {
       try {
@@ -20,13 +21,17 @@ const UserDetails = () => {
     fetchUsers();
   }, []);
 
-  // Delete user from the server
   const handleDelete = async (userId) => {
     try {
       await axios.delete(`http://localhost:5000/admin/users/${userId}`);
       toast.success("User deleted successfully!");
-      // Remove user from state without re-fetching
-      setUsers(users.filter((user) => user._id !== userId));
+      setUsers((prevUsers) => {
+        const updatedUsers = prevUsers.filter((user) => user._id !== userId);
+        if (updatedUsers.length === 0) {
+          navigate("/"); 
+        }
+        return updatedUsers;
+      });
     } catch (error) {
       toast.error("Failed to delete user");
     }

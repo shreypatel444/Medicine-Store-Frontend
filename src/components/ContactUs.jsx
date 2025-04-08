@@ -87,7 +87,7 @@ const ContactUs = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/contact", {
+      const response = await fetch("http://localhost:5000/contacts", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -118,6 +118,7 @@ const ContactUs = () => {
           autoClose: 3000,
           theme: "colored",
         });
+        console.log("Failed to send message.", response);
       }
     } catch (error) {
       toast.error("❌ Server error! Please try again later.", {

@@ -40,7 +40,7 @@ const ContactUsList = () => {
         autoClose: 2000,
         theme: "colored",
       });
-      navigate("/admin/contactdata");
+      navigate("/adminpharma/contactdata");
     } catch (error) {
       toast.error("❌ Error deleting contact!", {
         position: "top-center",
