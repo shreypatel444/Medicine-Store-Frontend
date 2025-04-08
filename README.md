@@ -33,6 +33,10 @@ PharmaNet is a full-featured eCommerce web application for selling and managing 
 
 ---
 
+
+
+---
+
 ## ⚙️ Installation
 
 ### 1. Clone the repo
@@ -52,8 +56,10 @@ npm run dev
 
 # In /frontend
 npm start
+```
 
 ---
 
-## 📝 License
+📝 License
 This project is licensed under the MIT License.
+
