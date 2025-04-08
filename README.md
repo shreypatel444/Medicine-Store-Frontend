@@ -33,6 +33,10 @@ PharmaNet is a full-featured eCommerce web application for selling and managing 
 
 ---
 
+![Screenshot 2025-04-08 083704](https://github.com/user-attachments/assets/2b1950ff-670f-49ab-b290-76e37fcd6de6)
+![Screenshot 2025-04-08 083717](https://github.com/user-attachments/assets/b18161f7-96ab-47dc-ac4a-f38025ea4c27)
+![Screenshot 2025-04-08 101148](https://github.com/user-attachments/assets/2f0f929e-2b3d-41dc-863a-8dfa67540b0e)
+
 
 
 ---
