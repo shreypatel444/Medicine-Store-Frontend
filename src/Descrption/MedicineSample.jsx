@@ -17,7 +17,7 @@
 //   useEffect(() => {
 //     const fetchMedicine = async () => {
 //       try {
-//         const response = await axios.get(`http://localhost:5000/products/${disease}`);
+//         const response = await axios.get(`https://medicine-store-backend.onrender.com/products/${disease}`);
 //         if (response.data.length > 0) {
 //           setMedicine(response.data[0]);
 //         } else {
@@ -105,7 +105,7 @@ const MedicineDetails = () => {
     const fetchMedicine = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/products/${disease}`
+          `https://medicine-store-backend.onrender.com/products/${disease}`
         );
         if (response.data.length > 0) {
           setMedicine(response.data[0]);

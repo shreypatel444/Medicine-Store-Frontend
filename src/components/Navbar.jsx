@@ -25,7 +25,7 @@
 //           return;
 //         }
 
-//         const response = await axios.get("http://localhost:5000/auth/user", {
+//         const response = await axios.get("https://medicine-store-backend.onrender.com/auth/user", {
 //           headers: {
 //             Authorization: `Bearer ${token}`, // Send the token in the Authorization header
 //           },
@@ -250,7 +250,7 @@ const Navbar = () => {
           return;
         }
 
-        const response = await axios.get("http://localhost:5000/auth/user", {
+        const response = await axios.get("https://medicine-store-backend.onrender.com/auth/user", {
           headers: {
             Authorization: `Bearer ${token}`,
           },

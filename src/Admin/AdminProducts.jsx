@@ -20,7 +20,7 @@ const AddProduct = () => {
 
   const fetchProducts = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/products");
+      const response = await axios.get("https://medicine-store-backend.onrender.com/products");
       setProducts(response.data);
     } catch (error) {
       toast.error("Failed to fetch products.");
@@ -40,7 +40,7 @@ const AddProduct = () => {
   const handleUpdate = async (e) => {
     e.preventDefault();
     try {
-      await axios.put(`http://localhost:5000/products/${editProduct}`, product);
+      await axios.put(`https://medicine-store-backend.onrender.com/products/${editProduct}`, product);
       toast.success("✅ Updated successfully!", {
         position: "top-center",
         autoClose: 2000,
@@ -66,7 +66,7 @@ const AddProduct = () => {
 
   const handleDelete = async (productId) => {
     try {
-      await axios.delete(`http://localhost:5000/products/${productId}`);
+      await axios.delete(`https://medicine-store-backend.onrender.com/products/${productId}`);
       toast.success("✅ Deleted successfully!", {
         position: "top-center",
         autoClose: 2000,

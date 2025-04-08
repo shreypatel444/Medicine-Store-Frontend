@@ -12,7 +12,7 @@ const ContactUsList = () => {
   // Fetch all contact messages
   const fetchContacts = async () => {
     try {
-      const response = await fetch("http://localhost:5000/contacts");
+      const response = await fetch("https://medicine-store-backend.onrender.com/contacts");
       if (!response.ok) throw new Error("Failed to fetch data");
       const data = await response.json();
       setContacts(data);
@@ -28,7 +28,7 @@ const ContactUsList = () => {
   // Delete a contact message
   const handleDelete = async (id) => {
     try {
-      const response = await fetch(`http://localhost:5000/contacts/${id}`, {
+      const response = await fetch(`https://medicine-store-backend.onrender.com/contacts/${id}`, {
         method: "DELETE",
       });
 

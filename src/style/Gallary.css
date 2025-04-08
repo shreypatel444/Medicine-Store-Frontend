@@ -44,7 +44,7 @@
 @media (max-width: 768px) { /* Tablets & Mobile */
   .gallery-container {
     height: 50vh; /* Reduce height for smaller screens */
-    margin-top: 25px; /* Push below navbar */
+    margin-top: 35px; /* Push below navbar */
   }
 
   .gallery-image {
@@ -60,7 +60,7 @@
 @media (max-width: 480px) { /* Mobile Phones */
   .gallery-container {
     height: 40vh; /* Adjust height for smaller screens */
-    margin-top: 25px; /* Ensure it stays below navbar */
+    margin-top: 35px; /* Ensure it stays below navbar */
   }
 
   .gallery-image {

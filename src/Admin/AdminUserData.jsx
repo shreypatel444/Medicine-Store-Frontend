@@ -11,7 +11,7 @@ const UserDetails = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/admin/users");
+        const response = await axios.get("https://medicine-store-backend.onrender.com/admin/users");
         setUsers(response.data);
       } catch (error) {
         toast.error("Failed to fetch users.");
@@ -23,7 +23,7 @@ const UserDetails = () => {
 
   const handleDelete = async (userId) => {
     try {
-      await axios.delete(`http://localhost:5000/admin/users/${userId}`);
+      await axios.delete(`https://medicine-store-backend.onrender.com/admin/users/${userId}`);
       toast.success("User deleted successfully!");
       setUsers((prevUsers) => {
         const updatedUsers = prevUsers.filter((user) => user._id !== userId);

@@ -19,7 +19,7 @@ const AdminAddProduct = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/products", product);
+      await axios.post("https://medicine-store-backend.onrender.com/products", product);
       toast.success("Product added successfully!");
       setProduct({
         name: "",

@@ -27,7 +27,7 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/auth/login",
+        "https://medicine-store-backend.onrender.com/auth/login",
         formData
       );
       const token = response.data.token; // Get the token from the response
